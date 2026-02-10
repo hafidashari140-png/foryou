@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy valentine 4u</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" class="kolom">
+          <h1 class="judul">Enter Password</h1>
+            <input class="paw" type="password" id="password" placeholder="password">
+            <br><br>
+           <button class="tombol" onclick="checkPassword()">Submit</button>
+            <script>
+                function checkPassword() {
+                    const passwordbenar = "3Gerberas";
+                    const inputUser= document.getElementById("password").value;
+
+                    if (inputUser === passwordbenar) {
+
+                        window.location.href = "secret.html";
+                        alert("Congratulations! You've unlocked the secret message!");
+                    } else {
+                        alert("Incorrect password. Try again!");
+                    }
+                }
+            </script>
+    </div>  
+</body>
+</html>         
